@@ -250,6 +250,7 @@
                             </div>
             
                             <div class="form-actions">
+                                <button type="button" class="btn btn-primary">Payment</button>
                                 <button type="button" class="btn btn-secondary">Cancel</button>
                                 <button type="button" class="btn btn-primary">Save & Continue</button>
                             </div>
@@ -257,7 +258,7 @@
                         
                         <div id="additional-info" class="tab-content">
                             <h3>Additional Information</h3>
-                            
+                            <div class="luxury-divider"></div>
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="email">Email Address</label>
@@ -356,6 +357,100 @@
             <!-- Footer -->
             <div class="footer">
                 Powered by: AuroiTech
+            </div>
+        </div>
+    </div>
+    
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Process Payment</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="paymentAmount">Amount</label>
+                    <input type="number" id="paymentAmount" class="form-control" placeholder="Enter amount" value="500">
+                </div>
+                <div class="form-group">
+                    <label for="paymentMethod">Payment Method</label>
+                    <select id="paymentMethod" class="form-control">
+                        <option value="cash">Cash</option>
+                        <option value="credit">Credit Card</option>
+                        <option value="debit">Debit Card</option>
+                        <option value="upi">UPI</option>
+                        <option value="insurance">Insurance</option>
+                    </select>
+                </div>
+                <div id="creditCardFields" style="display: none;">
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" id="cardNumber" class="form-control" placeholder="XXXX XXXX XXXX XXXX">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group" style="flex: 1">
+                            <label for="expiryDate">Expiry Date</label>
+                            <input type="text" id="expiryDate" class="form-control" placeholder="MM/YY">
+                        </div>
+                        <div class="form-group" style="flex: 1">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" class="form-control" placeholder="123">
+                        </div>
+                    </div>
+                </div>
+                <div id="upiFields" style="display: none;">
+                    <div class="form-group">
+                        <label for="upiId">UPI ID</label>
+                        <input type="text" id="upiId" class="form-control" placeholder="example@upi">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="paymentNotes">Notes</label>
+                    <textarea id="paymentNotes" class="form-control" rows="2" placeholder="Any additional notes"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cancelPayment">Cancel</button>
+                <button class="btn btn-primary" id="processPayment">Process Payment</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Photo Capture Modal -->
+    <div id="photoModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Patient Photo</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="photo-container">
+                    <video id="camera-preview" autoplay playsinline style="display: none;"></video>
+                    <canvas id="photo-canvas" style="display: none;"></canvas>
+                    <div id="capture-placeholder" class="capture-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Camera preview will appear here</p>
+                    </div>
+                    <div id="captured-image-container" style="display: none;">
+                        <img id="captured-image" alt="Captured photo">
+                    </div>
+                </div>
+                <div class="camera-controls">
+                    <button id="start-camera" class="btn btn-secondary">
+                        <i class="fas fa-video"></i> Start Camera
+                    </button>
+                    <button id="capture-photo" class="btn btn-primary" disabled>
+                        <i class="fas fa-camera"></i> Capture
+                    </button>
+                    <button id="retake-photo" class="btn btn-secondary" style="display: none;">
+                        <i class="fas fa-redo"></i> Retake
+                    </button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cancelPhoto">Cancel</button>
+                <button class="btn btn-primary" id="savePhoto" disabled>Save Photo</button>
             </div>
         </div>
     </div>
