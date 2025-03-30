@@ -19,23 +19,59 @@
             </div>
             
             <!-- Navigation icons -->
-            <div class="sidebar-icon active" id="patient-icon">
-                <svg viewBox="0 0 24 24">
-                    <path d="M12 12c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 1c-1.33 0-4 .67-4 2v1h8v-1c0-1.33-2.67-2-4-2z"/>
-                </svg>
-                <div class="icon-label">Patients</div>
+            <div class="sidebar-main-icons">
+                <div class="sidebar-icon active" id="patient-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 12c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 1c-1.33 0-4 .67-4 2v1h8v-1c0-1.33-2.67-2-4-2z"/>
+                    </svg>
+                    <div class="icon-label">Patients</div>
+                </div>
+                <div class="sidebar-icon" id="files-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/>
+                    </svg>
+                    <div class="icon-label">Files</div>
+                </div>
+                <div class="sidebar-icon" id="calendar-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/>
+                    </svg>
+                    <div class="icon-label">Calendar</div>
+                </div>
+                <div class="sidebar-icon" id="reports-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                    </svg>
+                    <div class="icon-label">Reports</div>
+                </div>
+                <div class="sidebar-icon" id="staff-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                    </svg>
+                    <div class="icon-label">Staff</div>
+                </div>
+                <div class="sidebar-icon" id="pharmacy-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M21 5h-2.64l1.14-3.14L17.15 1l-1.46 4H3v2l2 6-2 6v2h18v-2l-2-6 2-6V5zm-5 9h-3v3h-2v-3H8v-2h3V9h2v3h3v2z"/>
+                    </svg>
+                    <div class="icon-label">Pharmacy</div>
+                </div>
+                <div class="sidebar-icon" id="lab-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6 22h12c1.1 0 2-.9 2-2s-.9-2-2-2H6c-1.1 0-2 .9-2 2s.9 2 2 2zm3.8-12l2.8-3.4 2.8 3.4h3.6L12 2 5 10h4.8z"/>
+                    </svg>
+                    <div class="icon-label">Laboratory</div>
+                </div>
             </div>
-            <div class="sidebar-icon" id="files-icon">
-                <svg viewBox="0 0 24 24">
-                    <path d="M6 2c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13z"/>
-                </svg>
-                <div class="icon-label">Files</div>
-            </div>
-            <div class="sidebar-icon" id="settings-icon">
-                <svg viewBox="0 0 24 24">
-                    <path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/>
-                </svg>
-                <div class="icon-label">Settings</div>
+            
+            <!-- Bottom settings icon -->
+            <div class="sidebar-bottom-icons">
+                <div class="sidebar-icon" id="settings-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/>
+                    </svg>
+                    <div class="icon-label">Settings</div>
+                </div>
             </div>
         </div>
 
@@ -44,18 +80,14 @@
             <!-- Header -->
             <div class="header">
                 <div class="logo">
-                    <div class="logo-icon">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3m0-4.5c4.14 0 7.5 3.36 7.5 7.5 0 1.82-.66 3.49-1.75 4.8-.34-1.3-1.38-2.3-2.75-2.3-1.54 0-2.8 1.25-2.8 2.8V20H8.8v-2.7c0-1.54-1.25-2.8-2.8-2.8-1.37 0-2.41 1-2.75 2.3C2.16 15.49 1.5 13.82 1.5 12c0-4.14 3.36-7.5 7.5-7.5M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
-                        </svg>
-                    </div>
+                    <img src="AuroiTech_logo.png" alt="Aravind Eye Care Systems" class="header-logo">
                     <span class="logo-text">Aravind Eye Care Systems</span>
                 </div>
                 <div class="user-info">
                     <svg class="user-icon" viewBox="0 0 24 24">
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
                     </svg>
-                    <span>Welcome, Dr. Hariharan</span>
+                    <span>Welcome, Dr. Singh</span>
                 </div>
             </div>
 
